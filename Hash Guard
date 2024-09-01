@@ -1,0 +1,18 @@
+import hashlib
+
+file = "example.txt"
+
+with open(file, 'rb') as file_name:
+  file_content = file_name.read()
+  md5_file_hash = hashlib.md5(file_content).hexdigest()
+
+file1 = "example1.txt"
+
+with open (file1, 'rb') as file_name1:
+  file_content1 = file_name1.read()
+  md5_file_hash1 = hashlib.md5(file_content1).hexdigest()
+
+if(md5_file_hash == md5_file_hash1):
+  print("md5 hash is verified")
+else:
+  print("md5 hash varification has failed.")
