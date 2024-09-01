@@ -1,0 +1,28 @@
+#Creating a program for the elegibility of Voters
+
+#Creating variable
+age = int(input("What is your age?\n"))
+marka = (input("Enter your symbol name:\n"))
+marka1 = str.upper(marka)
+
+#Creating criteria of voters according to the age
+
+if(age>0 and age<18):
+  print ("You are a child voter.\n")
+  if((marka1 == "BOAT") or (marka1 == "NOUKA")):
+    print ("You are eligible to vote to boat.")
+  else:
+    print ("Go to hell !!!!") 
+elif(age>=18 and age<=60):
+  print("You are an adult voter.\n")
+  if((marka1 == "BOAT") or (marka1 == "NOUKA")):
+    print ("You are eligible to vote.")
+  else:
+    print ("Your vote has already been given to boat.\n")
+    print ("You are proceed to leave.")
+elif(age>60):
+  print("You are a senior citizen.\n")
+  if(marka1 == "BOAT"):
+    print("We will give your vote on behalf of you.")
+  else:
+    print ("It's better to wait for the death rather than going for the vote\n.")
