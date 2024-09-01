@@ -1,0 +1,18 @@
+#Creating program for house rent calculation
+
+house_rent = int(input("Enter the house rent:\n"))
+service_charge = int(input("Enter the service charge:\n"))
+room_member = int(input("Enter the number of members:\n"))
+current_bill = int(input("Enter the current bill amount:\n"))
+net_bill = int(input("Enter the internet bill:\n"))
+
+#Program of the rent amount of other members
+
+total_rent = (house_rent + service_charge + current_bill + net_bill)
+
+per_payable_rent = total_rent/room_member
+
+number1 = format(per_payable_rent, ".2f")
+
+print("The per person payable rent is: " + number1 + " Taka")
+
